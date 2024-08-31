@@ -1,30 +1,38 @@
 # RSA-Based Secure Data Handling with GUI
 
-This project implements a secure file encryption and decryption system using the RSA algorithm, featuring a user-friendly graphical interface.
+## Project Overview
+
+This project implements a secure data encryption and decryption system using the RSA algorithm, complemented by a user-friendly graphical interface. It is designed to handle sensitive information with high security by leveraging RSA for cryptographic operations.
 
 ## Key Features
 
-- **RSA Encryption/Decryption:** Encrypt files with a public key and decrypt with a private key to ensure secure data protection.
-- **Key Management:** Automatically generate and securely store RSA key pairs.
-- **File Handling:**
-  - **Encryption:** Select and encrypt files, saving them securely.
-  - **Decryption:** Retrieve and decrypt files to restore original content.
-- **User Interface:** An intuitive C# GUI for easy file selection and key management, interfacing with C++ for RSA operations.
+### RSA Encryption and Decryption
+- Utilizes the RSA algorithm, a widely-recognized asymmetric encryption technique, to ensure robust data security.
+- Encrypts data with a public key and decrypts data with the corresponding private key, providing a secure method for data protection.
+
+### Key Management
+- Automatically generates RSA key pairs (public and private keys) essential for the encryption and decryption processes.
+
+### User Interface
+- Developed an intuitive graphical user interface (GUI) in C# to facilitate seamless user interaction with the encryption and decryption functions.
+- Allows users to easily manage RSA keys, and perform encryption or decryption operations.
 
 ## Technical Implementation
 
-- **RSA Algorithm:** Utilizes public key encryption and private key decryption.
-- **C# Application:** Provides the graphical user interface for file operations and integrates with the C++ RSA library.
-- **C++ Library:** Implements core RSA cryptographic functions.
+### RSA Algorithm
+- **Public Key Encryption**: Encrypts data using the RSA public key, ensuring that only the holder of the corresponding private key can decrypt the data.
+- **Private Key Decryption**: Decrypts data using the RSA private key, restoring the original data securely.
+
+### C# Application
+- The primary GUI is developed in C# to provide a user-friendly experience. It handles key management, and integrates with the RSA cryptographic functions implemented in C++.
+
+### C++ Library
+- Implements the RSA algorithm in a C++ library, performing core cryptographic operations. This library is invoked by the C# application to handle encryption and decryption tasks.
 
 ## Workflow
 
-1. **Generate RSA Key Pairs:** Create and store RSA public and private keys.
-2. **Encrypt Files:** Select a file, encrypt it using the RSA public key, and save it.
-3. **Decrypt Files:** Select an encrypted file, decrypt it with the RSA private key to restore the original content.
+1. Key Generation
 
-## Getting Started
+2. Encryption Process
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/rsa-secure-data-handling.git
+3. Decryption Process
